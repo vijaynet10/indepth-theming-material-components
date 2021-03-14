@@ -16,7 +16,7 @@ $theming-material-components-theme: mat-light-theme(
 );
 
 // Define  a custom typography config
-$heading-font-family: "'Work Sans', sans-serif";
+$heading-font-family:var(--font);
 $typography: mat-typography-config(
   $display-4: mat-typography-level(112px, $font-family: $heading-font-family),
   $display-3: mat-typography-level(56px, $font-family: $heading-font-family),

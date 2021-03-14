@@ -13,7 +13,11 @@ import { NotificationService } from './shared/services/notification.service';
 export class AppComponent {
   title = 'theming-material-components';
 
-  constructor(private dialog: MatDialog, private notification: NotificationService) {}
+  constructor(private dialog: MatDialog, private notification: NotificationService) {
+
+    document.documentElement.style.setProperty('--font', "Poppins, Helvetica, sans-serif");
+
+  }
 
   openDialog(themeColor: 'primary' | 'accent' | 'warn'): void {
     const dialogRef = this.dialog.open(DialogComponent, {
